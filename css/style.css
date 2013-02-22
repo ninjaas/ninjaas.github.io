@@ -117,9 +117,9 @@ a:visited {
 /* Slide 2 */ 
 
 #slide2{
-	background: url('../images/smallworld.jpg'); 
+	/* background: url('../images/smallworld.jpg'); */
 	background-color:#ffffff;
-	background-size: 100% auto;
+	/* background-size: 100% auto; */
 	color:#8a8683;
 }
 #slide2 h1 {
@@ -173,9 +173,9 @@ a:visited {
 /* Slide 4 */
 
 #slide4{
-	background: url('../images/everything.jpg'); 
+	/* background: url('../images/everything.jpg'); */
 	background-color:#ffffff;
-	background-size: 100% auto;
+	/* background-size: 100% auto; */
 	color: #8a8683;
 }
 #slide4 h1 {
@@ -212,9 +212,9 @@ a:visited {
 }
 
 #slide6{
-	background: url('../images/industries.jpg'); 
+	/* background: url('../images/industries.jpg'); */
 	background-color:#ffffff;
-	background-size: 100% auto;
+	/* background-size: 100% auto; */
 	color: #8a8683;
 }
 #slide6 h1 {
