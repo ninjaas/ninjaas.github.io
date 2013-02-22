@@ -34,12 +34,12 @@ jQuery(document).ready(function ($) {
         var currentPosition = -1*($('html').offset().top);
         clickedPosition = $('.slide[data-slide="' + dataslide + '"]').offset().top;
         if(clickedPosition>currentPosition){
-            htmlbody.animate({
+            htmlbody.stop().animate({
                 scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
             }, 2000, 'easeInOutQuint');
         }else{
             console.log("up");
-            htmlbody.animate({
+            htmlbody.stop().animate({
                 scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top - 10 
             }, 2000, 'easeInOutQuint'); 
         }
