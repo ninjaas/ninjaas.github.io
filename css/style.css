@@ -45,6 +45,8 @@ a:visited {
 	background-color:#ffffff;
 	z-index:100;
 	border-bottom: 1px #f6f6f6 solid;
+	background-color: rgba(247,246,245,.85);
+	padding: 20px 0px;
 }
 #logo {
 	text-align: center;
@@ -53,7 +55,6 @@ a:visited {
 }
 #nav {
 	text-align: right;
-	margin: 30px 0 0 0;
 }
 .navigation{
 	float: right;
@@ -238,6 +239,7 @@ a:visited {
 	background-color:#8a8683;
 	background-size: 100% auto;
 	color: #fff;
+	padding-bottom:200px; 
 }
 #slide7 h1 {
 	font-size: 3.8em;
@@ -261,6 +263,11 @@ a:visited {
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
+
+.menu{
+	background-color: rgba(247,246,245,.85);
+	padding: 15px 0px;
+}
 
 #logo {
 	width: 100%;
@@ -346,6 +353,11 @@ a:visited {
 #logo {
 	width: 100%;
 	text-align: center;
+}
+
+.menu{
+	background-color: rgba(247,246,245,.85);
+	padding: 10px 0px;
 }
 
 #nav {

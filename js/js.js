@@ -38,7 +38,6 @@ jQuery(document).ready(function ($) {
                 scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
             }, 2000, 'easeInOutQuint');
         }else{
-            console.log("up");
             htmlbody.stop().animate({
                 scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top - 10 
             }, 2000, 'easeInOutQuint'); 
