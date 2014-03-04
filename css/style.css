@@ -33,6 +33,12 @@ a:visited {
 	min-height: 200px;
 	padding: 20px 0px;
 }
+/* Logo */
+
+#main-image{
+	margin: 0px auto;
+	display: block;
+}
 
 
 /* Navigation */
@@ -94,7 +100,8 @@ a:visited {
 /* Slide 1 */ 
 
 #slide1{
-	background-color:#ffffff;
+	background: url('../images/developer.jpg') no-repeat;
+	background-size: 100% auto;
 	color:#8a8683;
 }
 #slide1 h1 {
@@ -350,10 +357,10 @@ a:visited {
 /* Mobile */
 @media screen and (max-width: 480px) {
 
-#logo {
-	width: 100%;
-	text-align: center;
+#slide1{
+	background:#ffffff;
 }
+
 
 .menu{
 	background-color: rgba(247,246,245,.85);
@@ -369,8 +376,6 @@ a:visited {
 	width: 100%;
 	float: left;
 	list-style: none;
-	margin: 0;
-	padding:5px 0px;
 }
 
 .navigation li{
@@ -410,11 +415,6 @@ a:visited {
 }
 #slide4 h2 {
 	line-height: 1em;
-}
-
-.flex-container{
-	margin: 0px auto;
-	width: 80%;
 }
 
 }
