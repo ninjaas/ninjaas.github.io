@@ -1268,7 +1268,7 @@
   }
 }
 @media (min-width: 1200px) {
-  
+
 }
 @media (max-width: 1024px) {
   .modal {
@@ -1545,7 +1545,7 @@
     background-attachment: scroll;
   }
   .divider .bg-holder {
-    background-size: 100% 100%;
+    background-size: 100%;
     background-attachment: scroll;
   }
   .testimonial {

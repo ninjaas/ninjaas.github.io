@@ -211,8 +211,8 @@ textarea {
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   color: #333333;
   background-color: #ffffff;
 }
@@ -6759,7 +6759,7 @@ a:active {
   font-size: 48px;
 }
 .section .hero p {
-  font-size: 25.6px;
+  font-size: 19px;
 }
 /**
  * SERVICES
@@ -6767,7 +6767,7 @@ a:active {
  */
 #services {
   text-align: center;
-  font-size: 19.2px;
+  font-size: 14px;
 }
 #services .container {
   border-bottom: 1px solid #ddd;
@@ -6796,7 +6796,7 @@ a:active {
   padding-bottom: 20px;
 }
 .sev_list p {
-  padding: 5px 10px;
+  padding: 0px 0px;
 }
 .sev_list:hover {
   background: #f58239;
