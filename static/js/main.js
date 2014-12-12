@@ -1,12 +1,12 @@
 /**
- * Theme : Argo 
+ * Theme : Argo
  * Author: WPStrong
  * Url: http://themeforest.net/user/wpstrong
  * Version: 1.0
  */
 var trigged=[],scrollTimeout;
 jQuery(function($){
-	
+
 	$('#about-us .bar').attr('style','')
 	//Trigger rotate
 	// --------------------
@@ -37,13 +37,13 @@ jQuery(function($){
 	$(window).scroll(function(){
 		var wtop = $(window).scrollTop();
 		var header_heigh = $('#header').height();
-		if(wtop<header_heigh){ 
+		if(wtop<header_heigh){
 			$('#navbar').removeClass('navbar-fixed-top');
 			$('#header').css('margin-bottom',0);
 		}
 		clearTimeout(scrollTimeout);
 			scrollTimeout=setTimeout(function(){
-				
+
 				triggerEvent($('.portfolio:first'),function(){
 					if(trigged['portfolio']) return;
 					$('.isotope .item').addClass('active');
@@ -53,14 +53,14 @@ jQuery(function($){
 				triggerEvent($('#about-us'),function(){
 					if(trigged['about-us']) return;
 					$('.progress .bar').each(function(){
-						var $this=$(this);	
-						$this.css('width',$this.data('width')+'%');			
+						var $this=$(this);
+						$this.css('width',$this.data('width')+'%');
 					});
 					trigged['about-us'] = true;
 				},200);
 
 			},50);
-				
+
 			triggerEvent($('#navbar'),function(elem){
 				if(elem.hasClass('navbar-fixed-top')) return;
 				 elem.addClass('navbar-fixed-top');
@@ -76,7 +76,7 @@ jQuery(function($){
 		var size = metro.width()/2
 		bricks.css({width:size,height:size});
 		ser_equal_height();
-	
+
 
 	});
 
@@ -91,10 +91,10 @@ jQuery(function($){
 		}
 	});
 
-	
-	// Nav button click 
+
+	// Nav button click
 	// -------------------------------------------------------
-	
+
 	$('#navbar .nav a:not(.external) , #header a.nav-item:not(.external) , #navbar .brand:not(.external),#btn_up').click(function(e){
 		e.preventDefault();
 		var des = '#'+$(this).attr('href').split('#')[1];
@@ -124,7 +124,7 @@ jQuery(function($){
 		});
 
 	/**
-	 * Portfolio hover effect 
+	 * Portfolio hover effect
 	 */
 		$('#modalbox').on('show',function(){
 			$('.modal-backdrop:first').fadeOut(function(){$(this).remove();})
@@ -134,11 +134,11 @@ jQuery(function($){
 		.on('hidden',function(){
 			$(this).find('.modal-body').html('');
 		});
-		$(' .isotope > li ').each( function() { 
+		$(' .isotope > li ').each( function() {
 			var $this = $(this);
 			$(this).hoverdir({
 				hoverDelay : 0
-			}); 
+			});
 			$this.find('a').on('click',function(e){
 				e.preventDefault();
 				$('body').append('<div class="modal-backdrop fade in"></div>');
@@ -147,7 +147,7 @@ jQuery(function($){
 					$('#modalbox .modal-body').html(resutl);
 					$('#modalbox').modal('show');
 				})
-				
+
 			});
 		} );
 
@@ -157,15 +157,15 @@ jQuery(function($){
 		$('.testimonial').carousel({interval:5000});
 
 
-	
+
 	/**
 	 * Detect IE 10
 	 */
-	
-	if (/*@cc_on!@*/false) {  
-   		$("html").addClass("ie10").removeClass('csstransforms3d');  
-   	}	 
-	
+
+	if (/*@cc_on!@*/false) {
+   		$("html").addClass("ie10").removeClass('csstransforms3d');
+   	}
+
 
 })
 
@@ -194,11 +194,11 @@ jQuery(window).load(function($){
 	// -------------------------------------------------------
 	jQuery(window).trigger('scroll');
 	ser_equal_height();
-	
+
 
 })
 
-//Custom functions 
+//Custom functions
 
 /**
  * Returns a random integer between min and max

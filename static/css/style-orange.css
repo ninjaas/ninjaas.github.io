@@ -6453,6 +6453,11 @@ a:active {
  * SLIDER
  *
  */
+
+
+ .googleslide  { display:none; position:relative; }
+ .googleslide a:link { text-decoration:none; }
+ .googleslide img {min-width: inherit; max-width:inherit;}
 #slider {
   background: url(../img/header-bg.png) no-repeat fixed center center transparent;
   -webkit-background-size: 100%;
@@ -6464,8 +6469,17 @@ a:active {
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
-  border-bottom: 10px solid #f58239;
+  margin: 100px auto;
+  border: 0px;
 }
+
+#slider .captionWrapper {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  margin: 1px;
+}
+
 #slider .container {
   position: relative;
   overflow: hidden;

@@ -24,8 +24,6 @@
 <!--[if lt IE 9]>
 <link rel='stylesheet' id='style-ie9-css'  href='http://ninjaas.com/skin/assets/css/ie.css' type='text/css' media='all' />
 <![endif]-->
-<script type='text/javascript' src='/static/js/jquery.js'></script>
-<script type='text/javascript' src='/static/js/jquery-migrate.min.js'></script>
 
 </head>
 
@@ -182,9 +180,7 @@
 
 <div class="hero">
 <p style="text-align: center;">Download the Ninjaas App from the Play Store. Stay Updated on Upcoming Products.</p>
-  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ninjaas.productsintro">
-    <img style="max-width:70%;" src="https://d13yacurqjgara.cloudfront.net/users/2991/screenshots/1676747/google_play.gif" alt="Download Ninjaas.com Application at Play Store" />
-  </a>
+  <div id="slider"></div>
 	<h1>Choose the Right Partnership</h1>
 	<p>Contact us now.</p>
 </div>
@@ -665,11 +661,22 @@ Proceed with Full confidence, full satisfaction guaranteed!</p>
       <li class="rotate_item delay4"><span></span></li>
     </ul>
 </div>
+
+<script type='text/javascript' src='/static/js/jquery.js'></script>
+<script type='text/javascript' src='/static/js/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='/static/js/bootstrap.min.js?ver=10'></script>
 <script type='text/javascript' src='/static/js/jquery.mCustomScrollbar.concat.min.js?ver=10'></script>
 <script type='text/javascript' src='/static/js/jquery.hoverdir.js?ver=10'></script>
 <script type='text/javascript' src='/static/js/jquery.isotope.min.js?ver=10'></script>
 <script type='text/javascript' src='/static/js/main.js?ver=10'></script>
+<script type="text/javascript" src="/static/js/jquery.googleslides.js"></script>
+<script type="text/javascript">
+var slider = jQuery('#slider');
+slider.googleslides({
+  userid: '113942813968268306194',
+  albumid: '6091886666616331777'
+});
+</script>
 
 <!-- BEGIN GADWP v4.3.3 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
 <script>
