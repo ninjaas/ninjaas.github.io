@@ -3,11 +3,15 @@
 // License: http://www.opensource.org/licenses/mit-license.php
 
 (function( $ ){
+	var imagewidth = jQuery(window).width() - 30;
+	if (imagewidth > 760){
+		imagewidth = 760;
+	}
 	var defaults = {
 			  'userid'			 : '115528839112598673902',
 			  'albumid'			 : '5710317752556741025',
 			  'authkey' 		 : '',
-			  'imgmax'           : 740,
+			  'imgmax'           : imagewidth,
 			  'maxresults'		 : 100,
 			  'random'			 : true,
 			  'caption'			 : true,

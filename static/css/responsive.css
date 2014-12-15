@@ -1563,7 +1563,10 @@
     margin: 0 20px 0 20px;
   }
   #slider {
-    margin: 40px -20px 0 -20px;
+    margin: 100px auto;
+    display: block;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
   }
   #slider .container {
     margin: 0 20px 0 20px;
